@@ -1,0 +1,70 @@
+# CGMPX2 Config File!
+# Do not you think that you saw this configuration file somewhere?
+# This plugin is being developed with the aim of backward compatibility of Essentials.
+# It has functions close to Essentials, but it is not as high performance as Essentials.
+# It's a bit lighter because it's less functional. That much.
+
+# ------------------ Important settings ------------------
+
+# Apply color to OP's player's name. It is possible to set with color code.
+# Set it to none to invalidate it.
+OPsNameColor: "&4"
+
+# It is a setting of the prefix that is attached when it is set with the ordinary nick command.
+NickCommandPrefix: "~"
+
+# It is a setting of the length of the character string that can be set with the nick command.
+# By the way, the color code is not counted as the number of characters by default.
+NickMaxLength: 16
+
+# When teleporting survival players,
+# If specified coordinates are in the air, teleport to the ground.
+# Please be aware that if you disable it you teleport as it is.
+useSafeTeleport: true
+
+# Set whether to delete all potion effects with the heel command.
+clearAllEffect: false
+
+# Set whether to recover the hunger with the heel command.
+toBeFull: true
+
+# Set the time until AFK is reached.
+# Set to 0 to invalidate.
+afkTimeInterval: 300
+
+# You can make sure you do not receive an attack when you enter the AFK state.
+useGodMode: true
+
+# It prevents the AFK state from being canceled even if it is pushed by the player.
+useAntiPush: true
+
+# A prefix is added to the beginning of the tab list when Vault is installed and the prefix is set.
+enableTabPrefix: true
+
+# Please activate this setting when applying nickname to tab list.
+useDisplayName: true
+
+# Whether to use spawn in multi-world mode
+# It works only when Multiverse-Core is installed.
+multiWorldSpawn: true
+
+# Set whether to teleport to the spawn set at the first login.
+enableFirstJoinSpawn: false
+
+# Set whether to teleport to the spawn set at login.
+joinFixedSpawn: false
+
+# Set whether to teleport to spawn set at respawn.
+respawnToWorldSpawn: true
+
+# Teleport to the spawn of the world (or set) even if there is a player's bed.
+forcedRespawnToWorldSpawn: false
+
+# You can set how many homes you can register.
+# Set to 0 to invalidate.
+maxHomePoint: 5
+
+
+# ------------------ Message settings ------------------
+playerAFKMessage: "%Player% &eis AFK."
+playerAFKBackMessage: "%Player% &7no longer AFK."

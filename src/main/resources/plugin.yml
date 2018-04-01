@@ -1,0 +1,163 @@
+name: ${project.artifactId}
+version: ${project.version}
+main: tokyo.nafu_at.cgmpx.CGMPX
+author: "NAFU_at"
+website: https://nafu-at.tokyo
+softdepend: [Multiverse-Core, Vault, dynmap]
+
+commands:
+  afk:
+    description: Notify other players about their absence status.
+    permission: cgmpx.afk
+
+  back:
+    description: It will return to the point where the last teleport.
+    permission: cgmpx.back
+
+  cgm:
+    description: Change game mode.
+    permission: cgmpx.cgm
+    aliases: [gm]
+
+  day:
+    description: Set the time of the world at day.
+    permission: cgmpx.day
+
+  freeze:
+    description: To stop the movement of the player.
+    permission: cgmpx.freeze
+
+  fly:
+    description: Change the fly state.
+
+  forcenick:
+    description: Set your nickname.
+
+  fullvanish:
+    description:
+    permission: cgmpx.fullvanish
+
+  god:
+    description: Switch the invincible mode.
+
+  heal:
+    description: Remove the problem from you.
+
+  home:
+    description: Set your home point.
+
+  lobby:
+    description: Teleport to the coordinates of the lobby.
+
+  nick:
+    description: Set your nickname.
+
+  night:
+    description: Set the time of the world at night.
+    permission: cgmpx.night
+
+  rain:
+    description: It sends down rain.
+    permission: cgmpx.rain
+
+  nickreset:
+    description: Reset Nickname.
+
+  sun:
+    description: It will clear up.
+    permission: cgmpx.sun
+
+  spawn:
+    description: Teleport to the spawn point.
+
+  tp:
+    description: Teleport the player.
+
+  tpa:
+    description: Teleport the player.
+
+  tphere:
+    description: Teleport the player.
+
+  workbench:
+    description: Display the workbench GUI.
+    permission: cgmpx.workbench
+    aliases: [wbc, wb]
+
+  enderchest:
+    description: Display the ender chest GUI.
+    permission: cgmpx.enderchest
+    aliases: [ec]
+
+  vanish:
+    description:
+    permission: cgmpx.vanish
+
+permissions:
+  cgmpx.*:
+    default: op
+    chirdren:
+      cgmpx.afk: true
+      cgmpx.back: true
+      cgmpx.cgm: true
+      cgmpx.day: true
+      cgmpx.freeze: true
+      cgmpx.fly.toggle: true
+      cgmpx.fly.speed: true
+      cgmpx.admin.fly.toggle: true
+      cgmpx.admin.fly.speed: true
+      cgmpx.god: true
+      cgmpx.admin.god: true
+      cgmpx.heal: true
+      cgmpx.admin.heal: true
+      cgmpx.home.list: true
+      cgmpx.home.remove: true
+      cgmpx.home.tp: true
+      cgmpx.lobby: true
+      cgmpx.lobby.set: true
+      cgmpx.nick: true
+      cgmpx.nick.force: true
+      cgmpx.admin.nick: true
+      cgmpx.night: true
+      cgmpx.rain: true
+      cgmpx.sun: true
+      cgmpx.spawn: true
+      cgmpx.spawn.set: true
+      cgmpx.tp: true
+      cgmpx.tp.here: true
+      cgmpx.tp.all: true
+      cgmpx.workbench: true
+      cgmpx.enderchest: true
+      cgmpx.vanish: true
+      cgmpx.fullvanish: true
+      cgmpx.vanish.bypass: true
+
+  cgmpx.fly.*:
+    default: op
+    chirdren:
+      cgmpx.fly.toggle: true
+      cgmpx.fly.speed: true
+      cgmpx.admin.fly.toggle: true
+      cgmpx.admin.fly.speed: true
+
+  cgmpx.home.*:
+    default: op
+    chirdren:
+       cgmpx.home.list: true
+       cgmpx.home.remove: true
+       cgmpx.home.tp: true
+
+  cgmpx.nick.*:
+    default: op
+    chirdren:
+      cgmpx.nick: true
+      cgmpx.nick.force: true
+      cgmpx.admin.nick: true
+
+  cgmpx.vanish.*:
+    default: op
+    chirdren:
+      cgmpx.vanish: true
+      cgmpx.fullvanish: true
+      cgmpx.vanish.bypass: true
+
